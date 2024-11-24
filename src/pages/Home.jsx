@@ -25,6 +25,7 @@ const Home = () => {
         setNotes(data);
       } catch (error) {
         toast.error("Error fetching notes!");
+        console.log(error);
       }
     };
     fetchData();
@@ -45,6 +46,7 @@ const Home = () => {
       }
     } catch (error) {
       toast.error("Error saving note!");
+      console.log(error);
     }
   };
 
@@ -55,6 +57,7 @@ const Home = () => {
       toast.success("Note deleted successfully!");
     } catch (error) {
       toast.error("Error deleting note!");
+      console.log(error);
     }
   };
 
@@ -71,6 +74,7 @@ const Home = () => {
       );
     } catch (error) {
       toast.error("Error updating pin status!");
+      console.log(error);
     }
   };
 
